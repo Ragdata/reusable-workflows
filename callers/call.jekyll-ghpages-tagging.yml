@@ -24,18 +24,16 @@ on:
 
 jobs:
     call_reusable_workflow:
-        runs-on: ubuntu-latest
         permissions:
             contents: read
             pages: write
             id-token: write
-        steps:
-            - name: Call Reusable Workflow
-              uses: ragdata/reusable-workflows/.github/workflows/jekyll-ghpages-tagging.yml@master
-              with:
-                  posts_dir: "docs/_posts"
-                  tags_dir: "docs/_tags"
-                  tags_layout: "tags"
-                  feeds_dir: "docs/_feeds"
-                  feeds_layout: "feed"
-                  token: ${{ secrets.token }}
+        uses: ragdata/reusable-workflows/.github/workflows/jekyll-ghpages-tagging.yml@master
+        with:
+            posts_dir: "docs/_posts"
+            tags_dir: "docs/_tags"
+            tags_layout: "tags"
+            feeds_dir: "docs/_feeds"
+            feeds_layout: "feed"
+        secrets:
+            token: ${{ secrets.token }}

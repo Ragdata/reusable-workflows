@@ -41,9 +41,10 @@ on:
                 description: "Layout used by feed files"
                 required: false
                 default: "feed"
+        secrets:
             token:
                 description: "Token with 'repo' scope"
-                required: false
+                required: true
 
 # Sets permissions for the GITHUB_TOKEN
 permissions:
