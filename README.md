@@ -11,7 +11,7 @@
 🔸
 <a href="https://github.com/ragdata/reusable-workflows/releases" target="_blank">Releases</a>
 </h3>
-<br /><br />
+<br />
 <div align="center">
 
 ![GitHub issues](https://img.shields.io/github/issues-raw/ragdata/reusable-workflows?style=for-the-badge&logo=github)
