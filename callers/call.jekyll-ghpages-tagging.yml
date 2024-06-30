@@ -15,9 +15,10 @@ name: Jekyll GitHub-Pages Tagging Workflow
 on:
     # Trigger whenever .md files in the docs/_posts directory on the master branch are pushed
     push:
-        branches: ["master"]
+        branches:
+            - master
         paths:
-            - 'docs/_posts/*.md'
+            - "docs/_posts/*.md"
     # Allows for manual triggering via Actions tab
     workflow_dispatch:
 

@@ -50,21 +50,24 @@ A collection of all the workflows and scripts I use to manage my repositories.  
 
 ## ❓ [What's Included?](#toc)
 
-* ### Pages
-  * [call.jekyll-ghpages-tagging - Example Workflow]() 
-  * [jekyll-ghpages-tagging - Reusable Workflow (preview)]()
-  * [scripts/jekyll-ghpages-tagging.sh]()
+* #### Reusable Workflows
+  * [jekyll-ghpages-tagging.yml](.github/workflows/jekyll-ghpages-tagging.yml)
+* #### Callers
+  * [call.jekyll-ghpages-tagging.yml](callers/call.jekyll-ghpages-tagging.yml) 
+* #### Scripts
+  * [jekyll-ghpages-tagging.sh](scripts/jekyll-ghpages-tagging.sh)
 
 [`^ Top`](#toc)
 
 ## 📂 [Usage](#toc)
 
-Each Reusable Workflow is accompanied by an Example Workflow which demonstrates the recommended method of use.  Like so:
+For each Reusable Workflow you will find a corresponding Caller which provides an example of how you can use the workflow.  Simply copy the caller file into the `.github/workflows` of your repository, customise it according to your needs and you're good to go!   
 
-* [call.jekyll-ghpages-tagging.yml](pages/call.jekyll-ghpages-tagging.yml) - Example Workflow
-* [jekyll-ghpages-tagging.yml](pages/jekyll-ghpages-tagging.yml) - Reusable Workflow
-
-
+* .github
+  * workflows
+    * [jekyll-ghpages-tagging.yml](.github/workflows/jekyll-ghpages-tagging.yml)
+* callers
+  * [call.jekyll-ghpages-tagging.yml](callers/call.jekyll-ghpages-tagging.yml)
 
 [`^ Top`](#toc)
 

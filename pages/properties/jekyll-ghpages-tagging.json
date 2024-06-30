@@ -1,7 +1,0 @@
-{
-    "name": "Jekyll GH-Pages Tagging Reusable Workflow",
-    "description": "Scans Jekyll posts for tags and automatically creates corresponding files when new tags are encountered",
-    "iconName": "jekyll",
-    "categories": ["Pages", "Jekyll"],
-    "labels": ["preview"]
-}
