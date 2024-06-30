@@ -49,7 +49,7 @@ If you like this repository, please give it a ⭐ (it really does help)
 
 * ### Pages
   * [jekyll-ghpages-tagging Workflow (preview)]()
-  * [jekyll-ghpages-tagging.sh (bash script)]()
+  * [scripts/jekyll-ghpages-tagging.sh]()
 
 [`^ Top`](#toc)
 
