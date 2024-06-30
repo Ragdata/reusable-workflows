@@ -31,7 +31,7 @@ jobs:
             id-token: write
         steps:
             - name: Call Reusable Workflow
-              uses: ragdata/reusable-workflows/pages/jekyll-ghpages-tagging.yml@master
+              uses: ragdata/reusable-workflows/.github/workflows/jekyll-ghpages-tagging.yml@master
               with:
                   posts_dir: "docs/_posts"
                   tags_dir: "docs/_tags"
