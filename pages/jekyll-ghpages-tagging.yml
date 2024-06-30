@@ -1,0 +1,91 @@
+name: Deploy Jekyll Site to GH-Pages
+
+on:
+    # Runs when the master branch is pushed
+    push:
+        branches: [master]
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
+    # Allows this workflow to be called by other workflows
+    workflow_call:
+        inputs:
+            github_token:
+                description: "GitHub access token with 'repo' scope"
+                required: false
+                default: ${{ github.token }}
+            posts_dir:
+                description: "Path to '_posts' directory from root"
+                required: true
+                default: "_posts"
+            tags_dir:
+                description: "Path to '_tags' directory from root"
+                required: true
+                default: "_tags"
+            tags_layout:
+                description: "Layout used by tag files"
+                required: true
+                default: "tags"
+            feeds_dir:
+                description: "Path to '_feeds' directory from root"
+                required: false
+                default: "_feeds"
+            feeds_layout:
+                description: "Layout used by feed files"
+                required: false
+                default: "feed"
+
+# Sets permissions for the GITHUB_TOKEN
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+# Allow only one concurrent deployment - do not cancel runs in progress
+concurrency:
+    group: "pages"
+    cancel-in-progress: false
+
+jobs:
+
+    # BUILD JOB
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Setup Ruby
+              uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
+              with:
+                  ruby-version: '3.1'       # Not needed with a .ruby-version file
+                  bundler-cache: true       # runs 'bundle install' and caches installed gems automatically
+                  cache-version: 0          # Increment this number if you need to re-download cached gems
+            - name: Setup Pages
+              id: pages
+              uses: actions/configure-pages@v5
+            - name: Call Tag Generator Action
+              uses: ragdata/jekyll-ghpages-tagging@master
+              with:
+                  github_token: ${{ input.github.token }}
+                  posts_dir: ${{ input.posts_dir }}
+                  tags_dir: ${{ input.tags_dir }}
+                  tags_layout: ${{ input.tags_layout }}
+                  feeds_dir: ${{ input.feeds_dir }}
+                  feeds_layout: ${{ input.feeds_layout }}
+            - name: Build Jekyll            # Outputs to the './_site' directory by default
+              run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+              env:
+                  JEKYLL_ENV: production
+            - name: Upload Artifact         # Automatically uploads an artifact from the './_site' directory by default
+              uses: actions/upload-pages-artifact@v3
+
+    # DEPLOYMENT JOB
+    deploy:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4

@@ -1,0 +1,7 @@
+{
+    "name": "Jekyll GH-Pages Tagging Action",
+    "description": "Scans Jekyll posts for tags and automatically creates corresponding files when new tags are encountered",
+    "iconName": "jekyll-tube",
+    "categories": ["Pages", "Jekyll"],
+    "labels": ["preview"]
+}
