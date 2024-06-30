@@ -9,7 +9,7 @@
 # which allows all articles associated with the tag to be displayed
 # in each format.
 #
-# File:         call.jekyll-ghpages-tagger.yml
+# File:         jekyll-ghpages-tagger.yml
 # Author:       Ragdata
 # Date:         30/06/2024
 # License:      MIT License

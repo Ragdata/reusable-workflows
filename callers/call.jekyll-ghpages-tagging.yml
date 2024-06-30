@@ -38,4 +38,4 @@ jobs:
                   tags_layout: "tags"
                   feeds_dir: "docs/_feeds"
                   feeds_layout: "feed"
-                  token: ${{ secrets.token }}       # Needs to be a PAT
+                  token: ${{ secrets.token }}
