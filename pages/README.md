@@ -2,16 +2,18 @@
 
 <img height="256" src="https://raw.githubusercontent.com/Ragdata/media/master/logo/Ragdata-64.svg" alt="Ragdata's Reusable Workflows" />
 
-[Ragdata's Reusable Workflows](https://github.com/ragdata/reusable-workflows/releases/tag/v-0.1.0)
+[Ragdata's Reusable Workflows for GitHub Pages](https://github.com/ragdata/reusable-workflows/releases/tag/v-0.1.0)
 
 </h1>
+
+<a name="top"></a>
 
 <h3 align="center">
 <a href="https://github.com/ragdata/reusable-workflows/issues" target="_blank">Issues</a>
 🔸
 <a href="https://github.com/ragdata/reusable-workflows/releases" target="_blank">Releases</a>
 </h3>
-<br /><br />
+
 <div align="center">
 
 ![GitHub issues](https://img.shields.io/github/issues-raw/ragdata/reusable-workflows?style=for-the-badge&logo=github)
@@ -28,61 +30,29 @@ If you like this repository, please give it a ⭐ (it really does help)
 
 </h3>
 
----
+## ⭐ [Overview](#top)
 
-<h2><a name="toc">📖 Table of Contents</a></h2>
+A collection of Reusable Workflows for GitHub Pages
 
-- [Project Overview](#-project-overview)
-- [What's Included?](#-whats-included)
-- [Usage](#-installation)
-- [Project Supporters](#-project-supporters)
-- [Author/Maintainer](#-author--maintainer)
-- [Security](#-security)
-- [Copyright & Attributions](#-copyright--attributions)
-- [License](#-license)
-- [Resources](#-resources)
-
----
-
-## ⭐ [Project Overview](#toc)
-
-A collection of all the workflows and scripts I use to manage my repositories.  Some are very specific, while others are generic - but I'm sure that you'll find _something_ useful here.
-
-## ❓ [What's Included?](#toc)
+## ❓ [What's Included?](#top)
 
 * ### Pages
   * [call.jekyll-ghpages-tagging - Example Workflow]() 
   * [jekyll-ghpages-tagging - Reusable Workflow (preview)]()
   * [scripts/jekyll-ghpages-tagging.sh]()
 
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
-## 📂 [Usage](#toc)
+## 📂 [Usage](#top)
 
 Each Reusable Workflow is accompanied by an Example Workflow which demonstrates the recommended method of use.  Like so:
 
 * [call.jekyll-ghpages-tagging.yml](pages/call.jekyll-ghpages-tagging.yml) - Example Workflow
 * [jekyll-ghpages-tagging.yml](pages/jekyll-ghpages-tagging.yml) - Reusable Workflow
 
+[`^ Top`](#top)
 
-
-[`^ Top`](#toc)
-
-## ❤️ [Project Supporters](#toc)
-
-<div align="center">
-
-<h3><a href="https://github.com/sponsors/Ragdata" target="_blank">Click here to find out about available sponsorship opportunities!</a></h3>
-
-<h4>If sponsorship isn't right for you, but you have found my work to be useful in some way,<br />would you please consider buying me a coffee to help keep me going?</h4>
-
-<a href="https://www.buymeacoffee.com/ragdata" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-</div>
-
-[`^ Top`](#toc)
-
-## 🚧 [Author / Maintainer](#toc)
+## 🚧 [Author / Maintainer](#top)
 
 <div align="center">
 
@@ -98,50 +68,7 @@ Each Reusable Workflow is accompanied by an Example Workflow which demonstrates 
 
 </div>
 
-[`^ Top`](#toc)
-
-## 🔐 [Security](#toc)
-
-While I always good security practices, 100% security can never be guaranteed in any software package.  The `Reusable Workflows` are provided AS IS, and without warranty.  You can find more details in the [LICENSE](LICENSE) file included with this repository.
-
-If you discover any issue regarding the security of this project, please disclose that information responsibly by sending a [security advisory][advisory].  **PLEASE DO NOT CREATE AN ISSUE OR DISCUSSION TOPIC.**  You can read more about this project's security policies [HERE][security]
-
-[`^ Top`](#toc)
-
-## ©️ [Copyright & Attributions](#toc)
-
-This project incorporates ideas and / or code crafted by the following talented individuals:
-
-
-> "We see much further, and reach much higher,<br>only because we stand upon the shoulders of giants"
-
-[`^ Top`](#toc)
-
-## ⚖️ [License](#toc)
-
-![MIT](https://img.shields.io/badge/License-MIT-gold)
-
-Copyright © 2024 Redeyed Technologies
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[`^ Top`](#toc)
-
-## 📖 [Resources](#toc)
-
-* [GitHub Actions Documentation](https://docs.github.com/en/actions)
-* [GitHub Reusable Workflows Documentation](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
-  * [Calling a Reusable Workflow](https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow)
-  * [actions/starter-workflows](https://github.com/actions/starter-workflows)
-* [GitHub Packages Documentation](https://docs.github.com/en/packages)
-* [GitHub Marketplace](https://github.com/marketplace)
-* [GHCR](https://ghcr.io/)
-
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
 <h3 align="center">
 
@@ -153,14 +80,7 @@ If you like this repository, please give it a ⭐ (it really does help)
 
 <div align="center">
 
-<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fragdata%2Freusable-workflows" target="_blank"><img alt="Visitors" src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fragdata%2Freusable-workflows&countColor=%23d20000" /></a>
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fragdata%2Freusable-workflows%2Fpages" target="_blank"><img alt="Visitors" src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fragdata%2Freusable-workflows%2Fpages&countColor=%23d20000" /></a>
 <a href="https://github.com/ragdata" target="_blank"><img alt="Ragdata" src="https://img.shields.io/badge/-Made_With_☕_By_Ragdata-D20000?style=for-the-badge" /></a>
 
 </div>
-
-[advisory]: https://github.com/ragdata/reusable-workflows/security/advisories/new
-[all-contributors]: https://allcontributors.org
-[contributing]: https://github.com/ragdata/.github/blob/master/.github/CONTRIBUTING.md
-[issues]: https://github.com/ragdata/reusable-workflows/issues
-[security]: https://github.com/ragdata/reusable-workflows/security/policy
-[sponsors]: https://github.com/sponsors/Ragdata
