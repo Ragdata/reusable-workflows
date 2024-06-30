@@ -1,0 +1,7 @@
+{
+    "name": "Jekyll GH-Pages Tagging Example Workflow",
+    "description": "Provides an example of the recommended method for calling the reusable workflow",
+    "iconName": "jekyll-tube",
+    "categories": ["Pages", "Jekyll"],
+    "labels": ["preview"]
+}
