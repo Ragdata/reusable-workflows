@@ -1,18 +1,22 @@
-name: Deploy Jekyll Site to GH-Pages
+####################################################################
+# jekyll-ghpages-tagging.yml
+####################################################################
+# Jekyll GitHub-Pages Tagging Reusable Workflow
+#
+# This workflow
+#
+# File:         call.jekyll-ghpages-tagger.yml
+# Author:       Ragdata
+# Date:         30/06/2024
+# License:      MIT License
+# Copyright:    Copyright © 2024 Darren (Ragdata) Poulton
+####################################################################
+name: Jekyll GitHub-Pages Tagging Reusable Workflow
 
 on:
-    # Runs when the master branch is pushed
-    push:
-        branches: [master]
-    # Allows you to run this workflow manually from the Actions tab
-    workflow_dispatch:
     # Allows this workflow to be called by other workflows
     workflow_call:
         inputs:
-            github_token:
-                description: "GitHub access token with 'repo' scope"
-                required: false
-                default: ${{ github.token }}
             posts_dir:
                 description: "Path to '_posts' directory from root"
                 required: true
@@ -33,6 +37,10 @@ on:
                 description: "Layout used by feed files"
                 required: false
                 default: "feed"
+            github_token:
+                description: "GitHub access token with 'repo' scope"
+                required: false
+                default: ${{ github.token }}
 
 # Sets permissions for the GITHUB_TOKEN
 permissions:
@@ -65,12 +73,12 @@ jobs:
             - name: Call Tag Generator Action
               uses: ragdata/jekyll-ghpages-tagging@master
               with:
-                  github_token: ${{ input.github.token }}
                   posts_dir: ${{ input.posts_dir }}
                   tags_dir: ${{ input.tags_dir }}
                   tags_layout: ${{ input.tags_layout }}
                   feeds_dir: ${{ input.feeds_dir }}
                   feeds_layout: ${{ input.feeds_layout }}
+                  github_token: ${{ input.github.token }}
             - name: Build Jekyll            # Outputs to the './_site' directory by default
               run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
               env:
