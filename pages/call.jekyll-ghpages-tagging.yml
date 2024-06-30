@@ -30,11 +30,11 @@ jobs:
             id-token: write
         steps:
             - name: Call Reusable Workflow
-              uses: ragdata/reusable-workflows/pages/jekyll-ghpages-tagging.yml
+              uses: ragdata/reusable-workflows/pages/jekyll-ghpages-tagging.yml@master
               with:
                   posts_dir: "docs/_posts"
                   tags_dir: "docs/_tags"
                   tags_layout: "tags"
                   feeds_dir: "docs/_feeds"
                   feeds_layout: "feed"
-                  github_token: ${{ github.token }}
+                  token: ${{ secrets.token }}       # Needs to be a PAT

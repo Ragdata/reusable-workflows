@@ -3,7 +3,11 @@
 ####################################################################
 # Jekyll GitHub-Pages Tagging Reusable Workflow
 #
-# This workflow
+# This workflow scans files in the _posts directory of a Jekyll
+# GH-Pages site to check for new tags.  If new tags are found, a file
+# is created for each new tag under the '_tags' and '_feeds' folders
+# which allows all articles associated with the tag to be displayed
+# in each format.
 #
 # File:         call.jekyll-ghpages-tagger.yml
 # Author:       Ragdata
@@ -37,10 +41,9 @@ on:
                 description: "Layout used by feed files"
                 required: false
                 default: "feed"
-            github_token:
-                description: "GitHub access token with 'repo' scope"
+            token:
+                description: "Token with 'repo' scope"
                 required: false
-                default: ${{ github.token }}
 
 # Sets permissions for the GITHUB_TOKEN
 permissions:
@@ -73,12 +76,12 @@ jobs:
             - name: Call Tag Generator Action
               uses: ragdata/jekyll-ghpages-tagging@master
               with:
-                  posts_dir: ${{ input.posts_dir }}
-                  tags_dir: ${{ input.tags_dir }}
-                  tags_layout: ${{ input.tags_layout }}
-                  feeds_dir: ${{ input.feeds_dir }}
-                  feeds_layout: ${{ input.feeds_layout }}
-                  github_token: ${{ input.github.token }}
+                  posts_dir: ${{ inputs.posts_dir }}
+                  tags_dir: ${{ inputs.tags_dir }}
+                  tags_layout: ${{ inputs.tags_layout }}
+                  feeds_dir: ${{ inputs.feeds_dir }}
+                  feeds_layout: ${{ inputs.feeds_layout }}
+                  token: ${{ inputs.token }}
             - name: Build Jekyll            # Outputs to the './_site' directory by default
               run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
               env:
