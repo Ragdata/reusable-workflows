@@ -24,22 +24,27 @@ on:
             posts_dir:
                 description: "Path to '_posts' directory from root"
                 required: true
+                type: string
                 default: "_posts"
             tags_dir:
                 description: "Path to '_tags' directory from root"
                 required: true
+                type: string
                 default: "_tags"
             tags_layout:
                 description: "Layout used by tag files"
                 required: true
+                type: string
                 default: "tags"
             feeds_dir:
                 description: "Path to '_feeds' directory from root"
                 required: false
+                type: string
                 default: "_feeds"
             feeds_layout:
                 description: "Layout used by feed files"
                 required: false
+                type: string
                 default: "feed"
         secrets:
             token:
