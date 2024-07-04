@@ -26,6 +26,7 @@ jobs:
     call_reusable_workflow:
         permissions:
             contents: write
+            id-token: write
         uses: ragdata/reusable-workflows/.github/workflows/jekyll-ghpages-tagging.yml@master
         with:
             posts_dir: "docs/_posts"
@@ -34,3 +35,5 @@ jobs:
             feeds_dir: "docs/_feeds"
             feeds_layout: "feed"
             prune_tags: true
+        secrets:
+            github_token: ${{ secrets.github_token }}

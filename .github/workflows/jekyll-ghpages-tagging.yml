@@ -51,6 +51,9 @@ on:
                 required: false
                 type: boolean
                 default: true
+        secrets:
+            github_token:
+                required: true
 
 jobs:
 
@@ -62,6 +65,7 @@ jobs:
             - name: Call Tag Generator Action
               uses: ragdata/jekyll-ghpages-tagging@master
               with:
+                  github_token: ${{ secrets.github_token }}
                   posts_dir: ${{ inputs.posts_dir }}
                   tags_dir: ${{ inputs.tags_dir }}
                   tags_layout: ${{ inputs.tags_layout }}
