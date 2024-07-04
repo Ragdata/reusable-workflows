@@ -54,8 +54,6 @@ A collection of all the workflows and scripts I use to manage my repositories.  
   * [jekyll-ghpages-tagging.yml](.github/workflows/jekyll-ghpages-tagging.yml)
 * #### Callers
   * [call.jekyll-ghpages-tagging.yml](callers/call.jekyll-ghpages-tagging.yml) 
-* #### Scripts
-  * [jekyll-ghpages-tagging.sh](scripts/jekyll-ghpages-tagging.sh)
 
 [`^ Top`](#toc)
 
