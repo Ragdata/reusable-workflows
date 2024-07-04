@@ -35,4 +35,4 @@ jobs:
             tags_layout: "tags"
             feeds_dir: "docs/_feeds"
             feeds_layout: "feed"
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+            github_token: ${{ github.token }}
