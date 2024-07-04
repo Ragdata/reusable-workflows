@@ -46,10 +46,6 @@ on:
                 required: false
                 type: string
                 default: "feed"
-            github_token:
-                description: "Token supplied by GitHub"
-                required: true
-                type: string
 
 # Sets permissions for the GITHUB_TOKEN
 permissions:
@@ -87,7 +83,7 @@ jobs:
                   tags_layout: ${{ inputs.tags_layout }}
                   feeds_dir: ${{ inputs.feeds_dir }}
                   feeds_layout: ${{ inputs.feeds_layout }}
-                  github_token: ${{ inputs.github_token }}
+                  github_token: ${{ secrets.github_token }}
 #            - name: Build Jekyll            # Outputs to the './_site' directory by default
 #              run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
 #              env:
