@@ -21,6 +21,11 @@ on:
     # Allows this workflow to be called by other workflows
     workflow_call:
         inputs:
+            debug:
+                description: "Debug switch"
+                required: false
+                type: boolean
+                default: false
             posts_dir:
                 description: "Path to '_posts' directory from root"
                 required: true
