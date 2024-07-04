@@ -65,7 +65,7 @@ jobs:
             - name: Call Tag Generator Action
               uses: ragdata/jekyll-ghpages-tagging@master
               env:
-                  github_token: ${{ secrets.token }}
+                  GITHUB_TOKEN: ${{ secrets.token }}
               with:
                   posts_dir: ${{ inputs.posts_dir }}
                   tags_dir: ${{ inputs.tags_dir }}
