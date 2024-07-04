@@ -83,6 +83,7 @@ jobs:
             - name: Call Tag Generator Action
               uses: ragdata/jekyll-ghpages-tagging@master
               with:
+                  debug: ${{ inputs.debug }}
                   posts_dir: ${{ inputs.posts_dir }}
                   tags_dir: ${{ inputs.tags_dir }}
                   tags_layout: ${{ inputs.tags_layout }}
