@@ -61,16 +61,17 @@ jobs:
         runs-on: ubuntu-latest
         permissions:
             contents: write
-            id-token: write
         steps:
             - name: Checkout
               uses: actions/checkout@v4
             - name: Call Tag Generator Action
               uses: ragdata/jekyll-ghpages-tagging@master
               with:
-                  GITHUB_TOKEN: ${{ secrets.token }}
                   posts_dir: ${{ inputs.posts_dir }}
                   tags_dir: ${{ inputs.tags_dir }}
                   tags_layout: ${{ inputs.tags_layout }}
                   feeds_dir: ${{ inputs.feeds_dir }}
                   feeds_layout: ${{ inputs.feeds_layout }}
+                  prune_tags: ${{ inputs.prune_tags }}
+              env:
+                  GITHUB_TOKEN: ${{ secrets.token }}
