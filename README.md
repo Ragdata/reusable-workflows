@@ -8,8 +8,6 @@
 
 <h3 align="center">
 <a href="https://github.com/ragdata/reusable-workflows/issues" target="_blank">Issues</a>
-🔸
-<a href="https://github.com/ragdata/reusable-workflows/releases" target="_blank">Releases</a>
 </h3>
 <br />
 <div align="center">
@@ -17,6 +15,10 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/ragdata/reusable-workflows?style=for-the-badge&logo=github)
 ![Last Commit](https://img.shields.io/github/last-commit/ragdata/reusable-workflows/master?logo=github&style=for-the-badge)
 ![MIT](https://img.shields.io/badge/License-MIT-gold?style=for-the-badge)
+
+#### _Elapsed Project Time_
+
+[![wakatime](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/207f6033-f082-4973-8e15-398bed59c8d9.svg?style=for-the-badge)](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/207f6033-f082-4973-8e15-398bed59c8d9)
 
 </div>
 
@@ -60,7 +62,7 @@ A collection of all the workflows and scripts I use to manage my repositories.  
 
 ## 📂 [Usage](#toc)
 
-For each Reusable Workflow you will find a corresponding Caller which provides an example of how you can use the workflow.  Simply copy the caller file into the `.github/workflows` of your repository, customise it according to your needs and you're good to go!   
+For each [**Reusable Workflow**](https://github.com/Ragdata/reusable-workflows/tree/master/.github/workflows) you will find a corresponding [**Caller**](https://github.com/Ragdata/reusable-workflows/tree/master/callers) which provides an example of how you can use the workflow.  Simply copy the caller file into the `.github/workflows` directory of your repository, customise it according to your needs and you're good to go!   
 
 [`^ Top`](#toc)
 
