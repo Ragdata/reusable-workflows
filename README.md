@@ -36,11 +36,10 @@ A collection of all the workflows and scripts I use to manage my repositories.  
 
 ## ❓ [What's Included?](#toc)
 
-* #### Reusable Workflows
-  * [jekyll-ghpages-tagging.yml](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/jekyll-ghpages-tagging.yml)
-* #### Callers
-  * [call.jekyll-ghpages-tagging.yml](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.jekyll-ghpages-tagging.yml)
-
+| Category  |                                                 Caller                                                 | Reusable Workflow                                                                                                                 |  		  |  Ver	  |
+|:----------|:------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------|:----:|:--------:|
+| `CI`	 	   |     	[⚓](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.super-linter.yml)	     | 	[Super Linter](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/super-linter.yml)		                   |  🆕	 | 1.0   |
+| `Pages`	 | [⚓](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.jekyll-ghpages-tagging.yml) | [Jekyll GH-Pages Tagging](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/jekyll-ghpages-tagging.yml) |  		  | 1.0  	 |
 
 [`^ Top`](#toc)
 
@@ -92,10 +91,25 @@ If you discover any issue regarding the security of this project, please disclos
 
 ## ©️ [Copyright & Attributions](#toc)
 
+**Ragdata's Reusable Workflows**<br />
+Copyright &copy; 2024 Redeyed Technologies
+
 This project incorporates ideas and / or code crafted by the following talented individuals:
 
 
 > "We see much further, and reach much higher,<br>only because we stand upon the shoulders of giants"
+
+[`^ Top`](#toc)
+
+## 📖 [Resources](#toc)
+
+* [GitHub Actions Documentation](https://docs.github.com/en/actions)
+* [GitHub Reusable Workflows Documentation](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
+  * [Calling a Reusable Workflow](https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow)
+  * [actions/starter-workflows](https://github.com/actions/starter-workflows)
+* [GitHub Packages Documentation](https://docs.github.com/en/packages)
+* [GitHub Marketplace](https://github.com/marketplace)
+* [GHCR](https://ghcr.io/)
 
 [`^ Top`](#toc)
 
@@ -110,18 +124,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[`^ Top`](#toc)
-
-## 📖 [Resources](#toc)
-
-* [GitHub Actions Documentation](https://docs.github.com/en/actions)
-* [GitHub Reusable Workflows Documentation](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
-  * [Calling a Reusable Workflow](https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow)
-  * [actions/starter-workflows](https://github.com/actions/starter-workflows)
-* [GitHub Packages Documentation](https://docs.github.com/en/packages)
-* [GitHub Marketplace](https://github.com/marketplace)
-* [GHCR](https://ghcr.io/)
 
 [`^ Top`](#toc)
 
