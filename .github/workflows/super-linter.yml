@@ -65,14 +65,6 @@ on:
                 required: false
                 type: boolean
                 default: false
-            ssl_cert_secret:
-                description: "SSL cert to add to the Super-Linter trust store. This is needed for users on self-hosted runners or need to inject the cert for security standards (ex. ${{ secrets.SSL_CERT }})"
-                required: false
-                type: string
-            ssh_key:
-                description: "SSH key that has access to your private repositories"
-                required: false
-                type: string
             ssh_setup_github:
                 description: "If set to true, adds the github.com SSH key to known_hosts. This is ignored if SSH_KEY is provided - i.e. the github.com SSH key is always added if SSH_KEY is provided"
                 required: false
@@ -506,6 +498,10 @@ on:
         secrets:
             token:
                 required: true
+            ssl_cert:
+                required: false
+            ssh_key:
+                required: false
 
 jobs:
 
@@ -532,8 +528,7 @@ jobs:
               # Save the PR target branch name to a variable for use in linter config
               # Pass the string between job steps by echoing to $GITHUB_ENV
               if: ${{ github.base_ref != '' }}
-              run: |
-                  echo "DEFAULT_BRANCH=${{ github.base_ref }}" >> $GITHUB_ENV
+              run: echo "DEFAULT_BRANCH=${{ github.base_ref }}" >> $GITHUB_ENV
 
             - name: Set DEFAULT_BRANCH to Current Branch
               # If base_ref has no value, this is just a commit on a branch
@@ -541,19 +536,27 @@ jobs:
               # then save the current branch name to a variable for use in linter config
               # Pass the string between job steps by echoing to $GITHUB_ENV
               if: ${{ github.base_ref == '' }}
-              run: |
-                  echo "DEFAULT_BRANCH=$(echo '${{ github.ref }}' | sed 's/refs\/heads\///')" >> $GITHUB_ENV
+              run: echo "DEFAULT_BRANCH=$(echo '${{ github.ref }}' | sed 's/refs\/heads\///')" >> $GITHUB_ENV
 
             # used as a sanity check to ensure we're only linting all files on release branches
             - name: Linting All Files?
-              run: |
-                  echo "VALIDATE_ALL_CODEBASE=${{ !contains(github.event_name, 'pull_request') }}"
+              run: echo "VALIDATE_ALL_CODEBASE=${{ !contains(github.event_name, 'pull_request') }}"
 
             # customise exclude paths and files with regex
             - name: FILTER_REGEX_EXCLUDE
               if: ${{ inputs.filter-regex-exclude }}
-              run: |
-                  echo "FILTER_REGEX_EXCLUDE=${{ inputs.filter-regex-exclude }}" >> $GITHUB_ENV
+              run: echo "FILTER_REGEX_EXCLUDE=${{ inputs.filter-regex-exclude }}" >> $GITHUB_ENV
+
+            # ssl_cert to add to super-linter trust store
+            # this is needed for users on self-hosted runners or need to inject the cert for security standards
+            - name: SSL_CERT_SECRET
+              if: ${{ secrets.ssl_cert }}
+              run: echo "SSL_CERT_SECRET=${{ secrets.ssl_cert }}" >> $GITHUB_ENV
+
+            # SSH key that has access to your private repositories
+            - name: SSH_KEY
+              if: ${{ secrets.ssh_key }}
+              run: echo "SSH_KEY=${{ secrets.ssh_key }}" >> $GITHUB_ENV
 
             # run many linters against changed files on PRs, and ALL files on commit to branch
             # https://github.com/marketplace/actions/super-linter
@@ -570,8 +573,6 @@ jobs:
                   ignore_gitignored_files: ${{ inputs.ignore_gitignored_files }}
                   log_level: ${{ inputs.log_level }}
                   save_super_linter_output: ${{ inputs.save_super_linter_output }}
-                  ssl_cert_secret: ${{ inputs.ssl_cert_secret }}
-                  ssh_key: ${{ inputs.ssh_key }}
                   ssh_setup_github: ${{ inputs.ssh_setup_github }}
                   ssh_insecure_no_verify_github_key: ${{ inputs.ssh_insecure_no_verify_github_key }}
                   super_linter_output_directory_name: ${{ inputs.super_linter_output_directory_name }}
@@ -670,6 +671,3 @@ jobs:
                   # also change schema location to an up-to-date list
                   # https://github.com/yannh/kubernetes-json-schema/#kubeval
                   KUBERNETES_KUBEVAL_OPTIONS: --ignore-missing-schemas --schema-location https://github.com/yannh/kubernetes-json-schema/master/
-
-
-
