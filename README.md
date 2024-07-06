@@ -34,18 +34,30 @@ If you like this repository, please give it a ⭐ (it really does help)
 
 A collection of all the workflows and scripts I use to manage my repositories.  Some are very specific, while others are generic - but I'm sure that you'll find _something_ useful here.
 
-## ❓ [What's Included?](#toc)
+### ❓ [What's Included?](#toc)
 
-| Category  |                                                 Caller                                                 | Reusable Workflow                                                                                                                 |  		  |  Ver	  |
-|:----------|:------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------|:----:|:--------:|
-| `CI`	 	   |     	[⚓](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.super-linter.yml)	     | 	[Super Linter](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/super-linter.yml)		                   |  🆕	 | 1.0   |
-| `Pages`	 | [⚓](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.jekyll-ghpages-tagging.yml) | [Jekyll GH-Pages Tagging](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/jekyll-ghpages-tagging.yml) |  		  | 1.0  	 |
+#### Example Types
+
+- 📣 **Caller Workflow** - an example of how to call the associated reusable workflow
+- ♻️ **Reusable Starter** - a starter workflow designed to be reusable 
+- ⚓ **Standalone Starter** - a starter workflow designed to be standalone
+
+| Category  | Reusable Workflow                                                                                                                 |                                                       Examples                                                       |  		  |  Ver	  |
+|:----------|:----------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------:|:----:|:--------:|
+| `CI`	 	   | 	[Super Linter](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/super-linter.yml)		                 |      [📣](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.super-linter.yml)	[⚓]() [♻️]()      |  🆕	 | 1.0   |
+| `Pages`	 | [Jekyll GH-Pages Tagging](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/jekyll-ghpages-tagging.yml) | [📣](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.jekyll-ghpages-tagging.yml) [⚓]() [♻️]() |  		  | 1.0  	 |
 
 [`^ Top`](#toc)
 
 ## 📂 [Usage](#toc)
 
-For each [**Reusable Workflow**](https://github.com/Ragdata/reusable-workflows/tree/master/.github/workflows) you will find a corresponding [**Caller**](https://github.com/Ragdata/reusable-workflows/tree/master/callers) which provides an example of how you can use the workflow.  Simply copy the caller file into the `.github/workflows` directory of your repository, customise it according to your needs and you're good to go!   
+For each [**Reusable Workflow**](https://github.com/Ragdata/reusable-workflows/tree/master/.github/workflows) you will find a number of different examples of how it might be implemented:
+
+- **Caller Workflows** demonstrate how to call the associated Reusable Workflow
+- **Reusable Starter Workflows** offer a starting point for building your own Reusable Workflow
+- **Standalone Starter Workflows** offer a starting point for building your own Standalone Workflow
+
+**Starter Workflows** are intended to be hosted under an organization's .github repository to be used as templates for any new workflows you may create.  See the relevant [GitHub Docs](https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization) for more information.  
 
 [`^ Top`](#toc)
 
@@ -90,9 +102,6 @@ If you discover any issue regarding the security of this project, please disclos
 [`^ Top`](#toc)
 
 ## ©️ [Copyright & Attributions](#toc)
-
-**Ragdata's Reusable Workflows**<br />
-Copyright &copy; 2024 Redeyed Technologies
 
 This project incorporates ideas and / or code crafted by the following talented individuals:
 
@@ -140,6 +149,7 @@ If you like this repository, please give it a ⭐ (it really does help)
 <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fragdata%2Freusable-workflows" target="_blank"><img alt="Visitors" src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fragdata%2Freusable-workflows&countColor=%23d20000" /></a>
 <a href="https://github.com/ragdata" target="_blank"><img alt="Ragdata" src="https://img.shields.io/badge/-Made_With_☕_By_Ragdata-D20000?style=for-the-badge" /></a>
 
+Copyright &copy; 2024 Redeyed Technologies
 </div>
 
 [advisory]: https://github.com/ragdata/reusable-workflows/security/advisories/new
