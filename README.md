@@ -30,22 +30,6 @@ If you like this repository, please give it a ⭐ (it really does help)
 
 </h3>
 
----
-
-<h2><a name="toc">📖 Table of Contents</a></h2>
-
-- [Project Overview](#-project-overview)
-- [What's Included?](#-whats-included)
-- [Usage](#-installation)
-- [Project Supporters](#-project-supporters)
-- [Author/Maintainer](#-author--maintainer)
-- [Security](#-security)
-- [Copyright & Attributions](#-copyright--attributions)
-- [License](#-license)
-- [Resources](#-resources)
-
----
-
 ## ⭐ [Project Overview](#toc)
 
 A collection of all the workflows and scripts I use to manage my repositories.  Some are very specific, while others are generic - but I'm sure that you'll find _something_ useful here.
