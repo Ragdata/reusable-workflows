@@ -57,14 +57,14 @@ on:
 
 jobs:
 
-    tag:
+    generate_tags:
         runs-on: ubuntu-latest
         permissions:
             contents: write
         steps:
             - name: Checkout
               uses: actions/checkout@v4
-            - name: Call Tag Generator Action
+            - name: Generate Tags
               uses: ragdata/jekyll-ghpages-tagging@master
               with:
                   posts_dir: ${{ inputs.posts_dir }}
