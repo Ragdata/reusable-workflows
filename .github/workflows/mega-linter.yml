@@ -159,15 +159,6 @@ jobs:
                   # Uncomment to disable copy-paste and spell checks
                   # DISABLE: COPYPASTE,SPELL
 
-                  # Uncomment to modify directory for all linter configuration rules
-                  # Can be a local folder or a remote URL
-                  # (ex: https://raw.githubusercontent.com/org/repo/mega-linter-rules )
-                  # LINTER_RULES_PATH: .github/linters
-
-                  # Uncomment to modify name and path of mega-linter config file
-                  # Can be a local file or remote URL
-                  # MEGALINTER_CONFIG: .mega-linter.yml
-
             ########################################################
             # Upload MegaLinter Artifacts
             ########################################################
