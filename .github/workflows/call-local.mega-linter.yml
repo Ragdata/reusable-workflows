@@ -29,4 +29,4 @@ jobs:
             contents: write
             issues: write
             pull-requests: write
-        uses: ./.github/workflows/mega-linter.yml@master
+        uses: ./.github/workflows/mega-linter.yml
