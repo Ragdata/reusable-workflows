@@ -110,7 +110,7 @@ on:
                 required: false
                 type: boolean
                 default: false
-            validate_chekov:
+            validate_checkov:
                 description: "Flag to enable or disable the linting process with Checkov"
                 required: false
                 type: boolean
