@@ -49,7 +49,7 @@ on:
                 description: "Email address to use when committing fixes"
                 required: false
                 type: string
-                default: "${{ env.github_actor_id }}+${{ env.github_actor }}@users.noreply.github.com"
+                default: "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
 
 # Comment env block if you do not want to apply fixes
 env:
