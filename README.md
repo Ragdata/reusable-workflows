@@ -1,13 +1,17 @@
+[![MegaLinter](https://github.com/ragdata/reusable-workflows/workflows/MegaLinter/badge.svg?branch=master)](https://github.com/<OWNER>/<REPOSITORY>/actions?query=workflow%3AMegaLinter+branch%3Amain)
+
 <h1 align="center">
 
 <img height="256" src="https://raw.githubusercontent.com/Ragdata/media/master/logo/Ragdata-64.svg" alt="Ragdata's Reusable Workflows" />
 
-[Ragdata's Reusable Workflows](https://github.com/ragdata/reusable-workflows/releases/tag/v-0.1.0)
+[Ragdata's Reusable Workflows](https://github.com/ragdata/reusable-workflows)
 
 </h1>
-
+<a name="top"></a>
 <h3 align="center">
 <a href="https://github.com/ragdata/reusable-workflows/issues" target="_blank">Issues Registry</a>
+🔸
+<a href="https://github.com/ragdata/reusable-workflows/master/" target="_blank">Documentation</a>
 </h3>
 <br />
 <div align="center">
@@ -18,7 +22,7 @@
 
 #### _Elapsed Project Time_
 
-[![wakatime](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/207f6033-f082-4973-8e15-398bed59c8d9.svg?style=for-the-badge)](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/207f6033-f082-4973-8e15-398bed59c8d9)
+[![wakatime](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/207f6033-f082-4973-8e15-398bed59c8d9.svg?style=for-the-badge)](https://wakatime.com/projects/reusable-workflows)
 
 </div>
 
@@ -30,11 +34,11 @@ If you like this repository, please give it a ⭐ (it really does help)
 
 </h3>
 
-## ⭐ [Project Overview](#toc)
+## ⭐ [Project Overview](#top)
 
 A collection of all the workflows and scripts I use to manage my repositories.  Some are very specific, while others are generic - but I'm sure that you'll find _something_ useful here.
 
-### ❓ [What's Included?](#toc)
+### ❓ [What's Included?](#top)
 
 #### Example Types
 
@@ -42,14 +46,14 @@ A collection of all the workflows and scripts I use to manage my repositories.  
 - ♻️ **Reusable Starter** - a starter workflow designed to be reusable 
 - ⚓ **Standalone Starter** - a starter workflow designed to be standalone
 
-| Category  | Reusable Workflow                                                                                                                 |                                                       Examples                                                       |  		  |  Ver	  |
-|:----------|:----------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------:|:----:|:--------:|
-| `CI`	 	   | [MegaLinter](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/mega-linter.yml)		                     |      [📣](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.mega-linter.yml)	[⚓]() [♻️]()       |  🆕	 | 1.0   |
-| `Pages`	 | [Jekyll GH-Pages Tagging](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/jekyll-ghpages-tagging.yml) | [📣](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.jekyll-ghpages-tagging.yml) [⚓]() [♻️]() |  		  | 1.0  	 |
+| Category  | Reusable Workflow                                 |                    Examples                    |  		  |  Ver	  |
+|:----------|:--------------------------------------------------|:----------------------------------------------:|:----:|:--------:|
+| `CI`	 	   | [MegaLinter][mega-linter]		                     |      [📣][call.mega-linter]	[⚓]() [♻️]()       |  🆕	 | 1.0   |
+| `Pages`	 | [Jekyll GH-Pages Tagging][jekyll-ghpages-tagging] | [📣][call.jekyll-ghpages-tagging] [⚓]() [♻️]() |  		  | 1.0  	 |
 
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
-## 📂 [Usage](#toc)
+## 📂 [Usage](#top)
 
 For each [**Reusable Workflow**](https://github.com/Ragdata/reusable-workflows/tree/master/.github/workflows) you will find a number of different examples of how it might be implemented:
 
@@ -59,9 +63,9 @@ For each [**Reusable Workflow**](https://github.com/Ragdata/reusable-workflows/t
 
 **Starter Workflows** are intended to be hosted under an organization's .github repository to be used as templates for any new workflows you may create.  See the relevant [GitHub Docs](https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization) for more information.  
 
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
-## ❤️ [Project Supporters](#toc)
+## ❤️ [Project Supporters](#top)
 
 <div align="center">
 
@@ -73,9 +77,9 @@ For each [**Reusable Workflow**](https://github.com/Ragdata/reusable-workflows/t
 
 </div>
 
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
-## 🚧 [Author / Maintainer](#toc)
+## 🚧 [Author / Maintainer](#top)
 
 <div align="center">
 
@@ -91,26 +95,26 @@ For each [**Reusable Workflow**](https://github.com/Ragdata/reusable-workflows/t
 
 </div>
 
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
-## 🔐 [Security](#toc)
+## 🔐 [Security](#top)
 
 While I always good security practices, 100% security can never be guaranteed in any software package.  The `Reusable Workflows` are provided AS IS, and without warranty.  You can find more details in the [LICENSE](LICENSE) file included with this repository.
 
 If you discover any issue regarding the security of this project, please disclose that information responsibly by sending a [security advisory][advisory].  **PLEASE DO NOT CREATE AN ISSUE OR DISCUSSION TOPIC.**  You can read more about this project's security policies [HERE][security]
 
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
-## ©️ [Copyright & Attributions](#toc)
+## ©️ [Copyright & Attributions](#top)
 
 This project incorporates ideas and / or code crafted by the following talented individuals:
 
 
 > "We see much further, and reach much higher,<br>only because we stand upon the shoulders of giants"
 
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
-## 📖 [Resources](#toc)
+## 📖 [Resources](#top)
 
 * [GitHub Actions Documentation](https://docs.github.com/en/actions)
 * [GitHub Reusable Workflows Documentation](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
@@ -120,9 +124,9 @@ This project incorporates ideas and / or code crafted by the following talented 
 * [GitHub Marketplace](https://github.com/marketplace)
 * [GHCR](https://ghcr.io/)
 
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
-## ⚖️ [License](#toc)
+## ⚖️ [License](#top)
 
 ![MIT](https://img.shields.io/badge/License-MIT-gold)
 
@@ -134,7 +138,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[`^ Top`](#toc)
+[`^ Top`](#top)
 
 <h3 align="center">
 
@@ -152,9 +156,12 @@ If you like this repository, please give it a ⭐ (it really does help)
 Copyright &copy; 2024 Redeyed Technologies
 </div>
 
+[jekyll-ghpages-tagging]: https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/jekyll-ghpages-tagging.yml
+[mega-linter]: https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/mega-linter.yml
+[call.jekyll-ghpages-tagging]: https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.jekyll-ghpages-tagging.yml
+[call.mega-linter]: https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.mega-linter.yml
+
 [advisory]: https://github.com/ragdata/reusable-workflows/security/advisories/new
-[all-contributors]: https://allcontributors.org
-[contributing]: https://github.com/ragdata/.github/blob/master/.github/CONTRIBUTING.md
 [issues]: https://github.com/ragdata/reusable-workflows/issues
 [security]: https://github.com/ragdata/reusable-workflows/security/policy
 [sponsors]: https://github.com/sponsors/Ragdata

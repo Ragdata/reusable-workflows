@@ -16,7 +16,7 @@
 # License:      MIT License
 # Copyright:    Copyright © 2024 Darren (Ragdata) Poulton
 ####################################################################
-name: Jekyll GitHub-Pages Tagging Reusable Workflow
+name: Jekyll GH-Pages Tagging Reusable Workflow
 
 on:
     # Allows this workflow to be called by other workflows
@@ -24,17 +24,17 @@ on:
         inputs:
             posts_dir:
                 description: "Path to '_posts' directory from root"
-                required: true
+                required: false
                 type: string
                 default: "_posts"
             tags_dir:
                 description: "Path to '_tags' directory from root"
-                required: true
+                required: false
                 type: string
                 default: "_tags"
             tags_layout:
                 description: "Layout used by tag files"
-                required: true
+                required: false
                 type: string
                 default: "tags"
             feeds_dir:
