@@ -30,8 +30,6 @@ ENABLE_LINTERS:
     - TYPESCRIPT_STANDARD
     - XML_XMLLINT
     - YAML_YAMLLINT
-DISABLE_ERRORS_LINTERS:
-    -
 # DISABLE: If you use DISABLE variable, the linters in the listed descriptors will be skipped
 # DISABLE_LINTERS: # If you use DISABLE_LINTERS variable, the listed linters will be skipped
 PRINT_ALL_FILES: false

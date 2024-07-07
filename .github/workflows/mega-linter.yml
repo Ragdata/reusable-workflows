@@ -50,6 +50,9 @@ on:
                 required: false
                 type: string
                 default: "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+        secrets:
+            token:
+                required: true
 
 # Comment env block if you do not want to apply fixes
 env:
@@ -89,7 +92,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
               with:
-                  token: ${{ secrets.GITHUB_TOKEN }}
+                  token: ${{ secrets.token }}
                   # If you use VALIDATE_ALL_CODEBASE = true, you can remove this line to
                   # improve performance
                   # fetch-depth: 0
@@ -151,7 +154,7 @@ jobs:
                         contains(fromJSON('["refs/heads/main", "refs/heads/master"]'), github.ref)
                       }}
 
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.token }}
 
                   # ADD YOUR CUSTOM ENV VARIABLES HERE OR DEFINE THEM IN A FILE
                   # .mega-linter.yml AT THE ROOT OF YOUR REPOSITORY
@@ -197,9 +200,9 @@ jobs:
               id: cpr
               if: env.APPLY_FIXES_IF_PR == 'true'
               with:
-                  token: ${{ secrets.GITHUB_TOKEN }}
-                  commit-message: "[MegaLinter] Apply linters automatic fixes"
-                  title: "[MegaLinter] Apply linters automatic fixes"
+                  token: ${{ secrets.token }}
+                  commit-message: ${{ inputs.commit_message }}
+                  title: "[MegaLinter] Apply Linters Automatic Fixes"
                   labels: bot
 
             ########################################################
