@@ -7,7 +7,7 @@
 </h1>
 
 <h3 align="center">
-<a href="https://github.com/ragdata/reusable-workflows/issues" target="_blank">Issues</a>
+<a href="https://github.com/ragdata/reusable-workflows/issues" target="_blank">Issues Registry</a>
 </h3>
 <br />
 <div align="center">
@@ -44,7 +44,7 @@ A collection of all the workflows and scripts I use to manage my repositories.  
 
 | Category  | Reusable Workflow                                                                                                                 |                                                       Examples                                                       |  		  |  Ver	  |
 |:----------|:----------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------:|:----:|:--------:|
-| `CI`	 	   | 	[Super Linter](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/super-linter.yml)		                 |      [📣](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.super-linter.yml)	[⚓]() [♻️]()      |  🆕	 | 1.0   |
+| `CI`	 	   | [MegaLinter](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/mega-linter.yml)		                     |      [📣](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.mega-linter.yml)	[⚓]() [♻️]()       |  🆕	 | 1.0   |
 | `Pages`	 | [Jekyll GH-Pages Tagging](https://github.com/Ragdata/reusable-workflows/blob/master/.github/workflows/jekyll-ghpages-tagging.yml) | [📣](https://github.com/Ragdata/reusable-workflows/blob/master/callers/call.jekyll-ghpages-tagging.yml) [⚓]() [♻️]() |  		  | 1.0  	 |
 
 [`^ Top`](#toc)
