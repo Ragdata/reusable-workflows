@@ -65,16 +65,6 @@ on:
                 required: false
                 type: boolean
                 default: false
-            ssh_setup_github:
-                description: "If set to true, adds the github.com SSH key to known_hosts. This is ignored if SSH_KEY is provided - i.e. the github.com SSH key is always added if SSH_KEY is provided"
-                required: false
-                type: boolean
-                default: false
-            ssh_insecure_no_verify_github_key:
-                description: "INSECURE - If set to true, does not verify the fingerprint of the github.com SSH key before adding this. This is not recommended!"
-                required: false
-                type: boolean
-                default: false
             super_linter_output_directory_name:
                 description: "Name of the directory where super-linter saves its output."
                 required: false
@@ -498,10 +488,6 @@ on:
         secrets:
             token:
                 required: true
-            ssl_cert:
-                required: false
-            ssh_key:
-                required: false
 
 jobs:
 
@@ -547,17 +533,6 @@ jobs:
               if: ${{ inputs.filter-regex-exclude }}
               run: echo "FILTER_REGEX_EXCLUDE=${{ inputs.filter-regex-exclude }}" >> $GITHUB_ENV
 
-            # ssl_cert to add to super-linter trust store
-            # this is needed for users on self-hosted runners or need to inject the cert for security standards
-            - name: SSL_CERT_SECRET
-              if: ${{ secrets.ssl_cert }}
-              run: echo "SSL_CERT_SECRET=${{ secrets.ssl_cert }}" >> $GITHUB_ENV
-
-            # SSH key that has access to your private repositories
-            - name: SSH_KEY
-              if: ${{ secrets.ssh_key }}
-              run: echo "SSH_KEY=${{ secrets.ssh_key }}" >> $GITHUB_ENV
-
             # run many linters against changed files on PRs, and ALL files on commit to branch
             # https://github.com/marketplace/actions/super-linter
             - name: Lint Codebase
@@ -573,8 +548,6 @@ jobs:
                   ignore_gitignored_files: ${{ inputs.ignore_gitignored_files }}
                   log_level: ${{ inputs.log_level }}
                   save_super_linter_output: ${{ inputs.save_super_linter_output }}
-                  ssh_setup_github: ${{ inputs.ssh_setup_github }}
-                  ssh_insecure_no_verify_github_key: ${{ inputs.ssh_insecure_no_verify_github_key }}
                   super_linter_output_directory_name: ${{ inputs.super_linter_output_directory_name }}
                   suppress_file_type_warn: ${{ inputs.suppress_file_type_warn }}
                   suppress_possum: ${{ inputs.suppress_possum }}

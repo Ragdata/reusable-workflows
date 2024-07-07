@@ -16,8 +16,10 @@ name: Super Linter Workflow
 on:
     # Trigger whenever files are pushed to any branch of the repo
     push:
+        branches: [$default-branch]
     # Trigger whenever a pull_request is raised
     pull_request:
+        branches: [$default-branch]
     # Allows for manual triggering via Actions tab
     workflow_dispatch:
 
