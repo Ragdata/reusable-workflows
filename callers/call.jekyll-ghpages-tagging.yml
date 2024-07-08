@@ -36,4 +36,4 @@ jobs:
             feeds_layout: "feed"
             prune_tags: true
         secrets:
-            token: ${{ secrets.github_token }}
+            token: ${{ secrets.GITHUB_TOKEN }}
