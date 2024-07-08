@@ -1,9 +1,9 @@
 ####################################################################
-# call-local.mega-linter.yml
+# mega-linter.call-local.yml
 ####################################################################
 # Mega Linter Local Caller Workflow
 #
-# File:         call-local.mega-linter.yml
+# File:         mega-linter.call-local.yml
 # Version:      1.0
 # Author:       Ragdata
 # Date:         07/07/2024
