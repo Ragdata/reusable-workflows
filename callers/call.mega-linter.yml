@@ -31,4 +31,4 @@ jobs:
             pull-requests: write
         uses: ragdata/reusable-workflows/.github/workflows/mega-linter.yml@master
         secrets:
-            token: ${{ secrets.GITHUB_TOKEN }}
+            token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
