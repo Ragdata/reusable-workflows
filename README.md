@@ -40,28 +40,13 @@ A collection of all the workflows and scripts I use to manage my repositories.  
 
 ### ❓ [What's Included?](#top)
 
-#### Example Types
 
-- 📣 **Caller Workflow** - an example of how to call the associated reusable workflow
-- ♻️ **Reusable Starter** - a starter workflow designed to be reusable 
-- ⚓ **Standalone Starter** - a starter workflow designed to be standalone
-
-| Category  | Reusable Workflow                                 |                    Examples                    |  		  |  Ver	  |
-|:----------|:--------------------------------------------------|:----------------------------------------------:|:----:|:--------:|
-| `CI`	 	   | [MegaLinter][mega-linter]		                     |      [📣][call.mega-linter]	[⚓]() [♻️]()       |  🆕	 | 1.0   |
-| `Pages`	 | [Jekyll GH-Pages Tagging][jekyll-ghpages-tagging] | [📣][call.jekyll-ghpages-tagging] [⚓]() [♻️]() |  		  | 1.0  	 |
 
 [`^ Top`](#top)
 
 ## 📂 [Usage](#top)
 
-For each [**Reusable Workflow**](https://github.com/Ragdata/reusable-workflows/tree/master/.github/workflows) you will find a number of different examples of how it might be implemented:
 
-- **Caller Workflows** demonstrate how to call the associated Reusable Workflow
-- **Reusable Starter Workflows** offer a starting point for building your own Reusable Workflow
-- **Standalone Starter Workflows** offer a starting point for building your own Standalone Workflow
-
-**Starter Workflows** are intended to be hosted under an organization's .github repository to be used as templates for any new workflows you may create.  See the relevant [GitHub Docs](https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization) for more information.  
 
 [`^ Top`](#top)
 
@@ -105,15 +90,6 @@ If you discover any issue regarding the security of this project, please disclos
 
 [`^ Top`](#top)
 
-## ©️ [Copyright & Attributions](#top)
-
-This project incorporates ideas and / or code crafted by the following talented individuals:
-
-
-> "We see much further, and reach much higher,<br>only because we stand upon the shoulders of giants"
-
-[`^ Top`](#top)
-
 ## 📖 [Resources](#top)
 
 * [GitHub Actions Documentation](https://docs.github.com/en/actions)
@@ -123,6 +99,15 @@ This project incorporates ideas and / or code crafted by the following talented 
 * [GitHub Packages Documentation](https://docs.github.com/en/packages)
 * [GitHub Marketplace](https://github.com/marketplace)
 * [GHCR](https://ghcr.io/)
+
+[`^ Top`](#top)
+
+## ©️ [Copyright & Attributions](#top)
+
+This project incorporates ideas and / or code crafted by the following talented individuals:
+
+
+> "We see much further, and reach much higher,<br>only because we stand upon the shoulders of giants"
 
 [`^ Top`](#top)
 
