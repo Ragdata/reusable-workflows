@@ -16,7 +16,7 @@
 # License:      MIT License
 # Copyright:    Copyright © 2024 Darren (Ragdata) Poulton
 ####################################################################
-name: Jekyll GH-Pages Tagging Reusable Workflow
+name: Jekyll GH-Pages Tagging - Reusable
 
 on:
     # Allows this workflow to be called by other workflows

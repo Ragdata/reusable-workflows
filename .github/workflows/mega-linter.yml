@@ -10,7 +10,7 @@
 # License:      MIT License
 # Copyright:    Copyright © 2024 Darren (Ragdata) Poulton
 ####################################################################
-name: MegaLinter Reusable Workflow
+name: MegaLinter - Reusable
 
 on:
     workflow_call:
