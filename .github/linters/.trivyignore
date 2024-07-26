@@ -1,0 +1,2 @@
+# Dockerfile - Image user should not be 'root'
+AVD-DS-0002
