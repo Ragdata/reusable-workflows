@@ -10,7 +10,7 @@
 # License:      MIT License
 # Copyright:    Copyright © 2024 Redeyed Technologies
 ####################################################################
-name: Ragdata's Release Manager - Reusable
+name: Release Manager - Reusable
 
 on:
     # Allows this workflow to be called by other workflows
