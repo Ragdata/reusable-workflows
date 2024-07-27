@@ -33,4 +33,4 @@ jobs:
             pull-requests: write
         uses: ./.github/workflows/mega-linter.yml
         secrets:
-            token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+            token: ${{ secrets.GITHUB_TOKEN }}
