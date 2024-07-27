@@ -13,8 +13,10 @@
 name: MegaLinter
 
 on:
-    # Trigger whenever files are pushed to any branch of the repo
-    push: null
+    # Trigger whenever files are pushed to the master branch
+    push:
+        branches:
+            - master
     # Trigger whenever a pull_request is raised on the master branch
     pull_request:
         branches:
