@@ -1,0 +1,69 @@
+####################################################################
+# release-manager.yml
+####################################################################
+# Ragdata's Release Manager Reusable Workflow
+#
+# File:         release-manager.yml
+# Version:      1.0
+# Author:       Ragdata
+# Date:         27/07/2024
+# License:      MIT License
+# Copyright:    Copyright © 2024 Redeyed Technologies
+####################################################################
+name: Ragdata's Release Manager - Reusable
+
+on:
+    # Allows this workflow to be called by other workflows
+    workflow_call:
+        inputs:
+            version:
+                description: "Release version"
+                required: false
+                type: string
+            type:
+                description: "Bump Type (patch/minor/major)"
+                required: false
+                type: string
+        secrets:
+            token:
+                required: true
+
+concurrency:
+    group: ${{ github.ref }}-${{ github.workflow }}
+    cancel-in-progress: true
+
+jobs:
+
+    manage_release:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            ########################################################
+            # Checkout Repository
+            ########################################################
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.token }}
+
+            ########################################################
+            # Transcribe Input Variables to ENV
+            ########################################################
+            # Specific Release Version
+            - name: VERSION
+              if: ${{ inputs.version }}
+              run: echo "RELEASE_VERSION=${{ inputs.version }}" >> "$GITHUB_ENV"
+
+            # Desired Bump Type
+            - name: TYPE
+              if: ${{ inputs.type }}
+              run: echo "BUMP_TYPE=${{ inputs.type }}" >> "$GITHUB_ENV"
+
+            ########################################################
+            # Manage Release
+            ########################################################
+            - name: Manage Release
+              uses: ragdata/release-manager-action@master
+              env:
+                  GITHUB_TOKEN: ${{ secrets.token }}
