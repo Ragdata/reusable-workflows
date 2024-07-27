@@ -1,5 +1,6 @@
 <div align="center">
 
+[![Pre-Release](https://img.shields.io/badge/Status-Pre--Release-d20000?labelColor=31383f)](https://github.com/Ragdata/Ragdata/blob/master/docs/badges.md)
 [![MegaLinter](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml/badge.svg)](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml)
 
 </div>
