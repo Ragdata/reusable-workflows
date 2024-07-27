@@ -1,4 +1,8 @@
-[![MegaLinter](https://github.com/ragdata/reusable-workflows/workflows/MegaLinter/badge.svg?branch=master)](https://github.com/ragdata>/reusable-workflows/actions?query=workflow%3AMegaLinter+branch%3Amain)
+<div align="center">
+
+[![MegaLinter](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml/badge.svg)](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml)
+
+</div>
 
 <h1 align="center">
 
