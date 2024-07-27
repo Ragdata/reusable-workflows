@@ -1,6 +1,5 @@
 <div align="center">
 
-[![Pre-Release](https://img.shields.io/badge/Status-Pre--Release-d20000?labelColor=31383f)](https://github.com/Ragdata/Ragdata/blob/master/docs/badges.md)
 [![MegaLinter](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml/badge.svg)](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml)
 
 </div>
@@ -13,61 +12,21 @@
 
 </h1>
 <a name="top"></a>
-<h3 align="center">
-<a href="https://github.com/ragdata/reusable-workflows/issues" target="_blank">Issues Registry</a>
-🔸
-<a href="https://github.com/ragdata/reusable-workflows/master/" target="_blank">Documentation</a>
-</h3>
-<br />
 <div align="center">
 
-![GitHub issues](https://img.shields.io/github/issues-raw/ragdata/reusable-workflows?style=for-the-badge&logo=github)
 ![Last Commit](https://img.shields.io/github/last-commit/ragdata/reusable-workflows/master?logo=github&style=for-the-badge)
-![MIT](https://img.shields.io/badge/License-MIT-gold?style=for-the-badge)
-
-#### _Elapsed Project Time_
-
+![MIT](https://img.shields.io/badge/License-MIT-gold?style=for-the-badge)<br />
 [![wakatime](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/207f6033-f082-4973-8e15-398bed59c8d9.svg?style=for-the-badge)](https://wakatime.com/projects/reusable-workflows)
 
 </div>
 
-<h3 align="center">
-
-If you like this repository, please give it a ⭐ (it really does help)
-
-<img alt="GitHub repository stars" src="https://img.shields.io/github/stars/ragdata/reusable-workflows?style=social">
-
-</h3>
-
 ## ⭐ [Project Overview](#top)
 
-A collection of all the workflows and scripts I use to manage my repositories.  Some are very specific, while others are generic - but I'm sure that you'll find _something_ useful here.
+These are the Reusable Workflows that I use to manage my GitHub repositories.  While you could probably use them as examples for your own workflows (and you are more than welcome to do so), this repository is not intended to be used by anyone but me.
 
-### ❓ [What's Included?](#top)
+If you'd like a more comprehensive example of the different ways you can use GitHub Actions & Workflows, please check out my [**Workflow Templates**](https://github.com/ragdata/workflow-templates) repository.
 
-
-
-[`^ Top`](#top)
-
-## 📂 [Usage](#top)
-
-
-
-[`^ Top`](#top)
-
-## ❤️ [Project Supporters](#top)
-
-<div align="center">
-
-<h3><a href="https://github.com/sponsors/Ragdata" target="_blank">Click here to find out about available sponsorship opportunities!</a></h3>
-
-<h4>If sponsorship isn't right for you, but you have found my work to be useful in some way,<br />would you please consider buying me a coffee to help keep me going?</h4>
-
-<a href="https://www.buymeacoffee.com/ragdata" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-</div>
-
-[`^ Top`](#top)
+> If you're determined to check out the workflows in this repo, you can find them hiding in the [`.github/workflows`](.github/workflows) directory.
 
 ## 🚧 [Author / Maintainer](#top)
 
@@ -87,14 +46,6 @@ A collection of all the workflows and scripts I use to manage my repositories.  
 
 [`^ Top`](#top)
 
-## 🔐 [Security](#top)
-
-While I always good security practices, 100% security can never be guaranteed in any software package.  The `Reusable Workflows` are provided AS IS, and without warranty.  You can find more details in the [LICENSE](LICENSE) file included with this repository.
-
-If you discover any issue regarding the security of this project, please disclose that information responsibly by sending a [security advisory][advisory].  **PLEASE DO NOT CREATE AN ISSUE OR DISCUSSION TOPIC.**  You can read more about this project's security policies [HERE][security]
-
-[`^ Top`](#top)
-
 ## 📖 [Resources](#top)
 
 * [GitHub Actions Documentation](https://docs.github.com/en/actions)
@@ -106,11 +57,6 @@ If you discover any issue regarding the security of this project, please disclos
 * [GHCR](https://ghcr.io/)
 
 [`^ Top`](#top)
-
-[//]: # (## ©️ [Copyright & Attributions]&#40;#top&#41;)
-[//]: # (This project incorporates ideas and / or code crafted by the following talented individuals:)
-[//]: # (> "We see much further, and reach much higher,<br>only because we stand upon the shoulders of giants")
-[//]: # ([`^ Top`]&#40;#top&#41;)
 
 ## ⚖️ [License](#top)
 
@@ -125,14 +71,6 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [`^ Top`](#top)
-
-<h3 align="center">
-
-If you like this repository, please give it a ⭐ (it really does help)
-
-<img alt="GitHub repository stars" src="https://img.shields.io/github/stars/ragdata/reusable-workflows?style=social">
-
-</h3>
 
 <div align="center">
 
