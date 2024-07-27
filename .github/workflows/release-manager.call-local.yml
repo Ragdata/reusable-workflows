@@ -33,7 +33,7 @@ on:
                 description: "Branch to create release from"
                 required: false
                 type: string
-                default: $default_branch
+                default: $default-branch
             pre-release:
                 description: "Mark as pre-release?"
                 required: false
