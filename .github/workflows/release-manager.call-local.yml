@@ -33,7 +33,7 @@ on:
                 description: "Branch to create release from"
                 required: false
                 type: string
-                default: $default-branch
+                default: ${{ github.event.repository.default_branch }}
             pre-release:
                 description: "Mark as pre-release?"
                 required: false
