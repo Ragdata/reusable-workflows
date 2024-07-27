@@ -57,16 +57,6 @@ jobs:
             ########################################################
             # Transcribe Input Variables to ENV
             ########################################################
-            # Specific Release Version
-            #- name: VERSION
-            #  if: ${{ inputs.version }}
-            #  run: echo "RELEASE_VERSION=${{ inputs.version }}" >> "$GITHUB_ENV"
-
-            # Desired Bump Type
-            #- name: TYPE
-            #  if: ${{ inputs.type }}
-            #  run: echo "BUMP_TYPE=${{ inputs.type }}" >> "$GITHUB_ENV"
-
             - name: INPUTS
               shell: bash
               run: |
@@ -77,6 +67,7 @@ jobs:
                   [[ -n "$TYPE" ]] && echo "BUMP_TYPE=$TYPE" >> "$GITHUB_ENV"
                   [[ -n "$BRANCH" ]] && echo "RELEASE_BRANCH=$BRANCH" >> "$GITHUB_ENV"
                   echo "PRE_RELEASE=${{ inputs.pre-release }}" >> "$GITHUB_ENV"
+
             ########################################################
             # Manage Release
             ########################################################
