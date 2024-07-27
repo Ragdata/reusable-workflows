@@ -33,7 +33,6 @@ on:
                 description: "Branch to create release from"
                 required: false
                 type: string
-                default: ${{ github.event.repository.default_branch }}
             pre-release:
                 description: "Mark as pre-release?"
                 required: false
@@ -49,7 +48,7 @@ jobs:
         with:
             version: ${{ inputs.version }}
             type: ${{ inputs.type }}
-            branch: ${{ inputs.branch }}
+            branch: ${{ inputs.branch || github.event.repository.default_branch }}
             pre-release: ${{ inputs.pre-release }}
         secrets:
             token: ${{ secrets.GITHUB_TOKEN }}
