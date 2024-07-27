@@ -26,10 +26,12 @@ on:
                 required: false
                 type: choice
                 options:
-                    - version
+                    - auto
                     - patch
                     - minor
                     - major
+                    - first
+                    - version
             branch:
                 description: "Branch to create release from"
                 required: false
