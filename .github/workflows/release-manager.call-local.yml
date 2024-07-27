@@ -22,9 +22,23 @@ on:
                 required: false
                 type: string
             type:
-                description: "Bump Type (patch/minor/major)"
+                description: "Bump Type"
+                required: false
+                type: choice
+                options:
+                    - patch
+                    - minor
+                    - major
+            branch:
+                description: "Branch to create release from"
                 required: false
                 type: string
+                default: $default_branch
+            pre-release:
+                description: "Mark as pre-release?"
+                required: false
+                type: boolean
+                default: false
 
 jobs:
 
@@ -35,5 +49,7 @@ jobs:
         with:
             version: ${{ inputs.version }}
             type: ${{ inputs.type }}
+            branch: ${{ inputs.branch }}
+            pre-release: ${{ inputs.pre-release }}
         secrets:
             token: ${{ secrets.GITHUB_TOKEN }}
