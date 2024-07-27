@@ -62,6 +62,6 @@ jobs:
             # Manage Release
             ########################################################
             - name: Manage Release
-              uses: ragdata/release-manager-action@master
+              uses: ragdata/release-manager.action@master
               env:
                   GITHUB_TOKEN: ${{ secrets.token }}
