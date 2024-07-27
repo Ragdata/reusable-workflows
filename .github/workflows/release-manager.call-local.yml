@@ -1,0 +1,39 @@
+####################################################################
+# release-manager.call-local.yml
+####################################################################
+# Ragdata's Release Manager Local Caller Workflow
+#
+# File:         release-manager.call-local.yml
+# Version:      1.0
+# Author:       Ragdata
+# Date:         27/07/2024
+# License:      MIT License
+# Copyright:    Copyright © 2024 Redeyed Technologies
+####################################################################
+name: Release Manager
+
+on:
+
+    # Allows for manual triggering via the Actions tab
+    workflow_dispatch:
+        inputs:
+            version:
+                description: "Release version"
+                required: false
+                type: string
+            type:
+                description: "Bump Type (patch/minor/major)"
+                required: false
+                type: string
+
+jobs:
+
+    call_reusable_workflow:
+        permissions:
+            contents: write
+        uses: ./.github/workflows/release-manager.yml
+        with:
+            version: ${{ inputs.version }}
+            type: ${{ inputs.type }}
+        secrets:
+            token: ${{ secrets.GITHUB_TOKEN }}
