@@ -28,7 +28,7 @@ on:
                 description: "Branch to create release from"
                 required: false
                 type: string
-            pre-release:
+            pre_release:
                 description: "Mark as pre-release?"
                 required: false
                 type: boolean
@@ -55,23 +55,14 @@ jobs:
               uses: actions/checkout@v4
 
             ########################################################
-            # Transcribe Input Variables to ENV
-            ########################################################
-            - name: INPUTS
-              shell: bash
-              run: |
-                  VERSION="${{ inputs.version }}"
-                  TYPE="${{ inputs.type }}"
-                  BRANCH="${{ inputs.branch }}"
-                  [[ -n "$VERSION" ]] && echo "RELEASE_VERSION=$VERSION" >> "$GITHUB_ENV"
-                  [[ -n "$TYPE" ]] && echo "BUMP_TYPE=$TYPE" >> "$GITHUB_ENV"
-                  [[ -n "$BRANCH" ]] && echo "RELEASE_BRANCH=$BRANCH" >> "$GITHUB_ENV"
-                  echo "PRE_RELEASE=${{ inputs.pre-release }}" >> "$GITHUB_ENV"
-
-            ########################################################
             # Manage Release
             ########################################################
             - name: Manage Release
               uses: ragdata/release-manager.action@master
+              with:
+                  version: ${{ inputs.version }}
+                  type: ${{ inputs.type }}
+                  branch: ${{ inputs.branch }}
+                  pre_release: ${{ inputs.pre_release }}
               env:
                   GITHUB_TOKEN: ${{ secrets.token }}

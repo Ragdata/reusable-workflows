@@ -32,11 +32,12 @@ on:
                     - major
                     - first
                     - version
+                    - update
             branch:
                 description: "Branch to create release from"
                 required: false
                 type: string
-            pre-release:
+            pre_release:
                 description: "Mark as pre-release?"
                 required: false
                 type: boolean
@@ -52,6 +53,6 @@ jobs:
             version: ${{ inputs.version }}
             type: ${{ inputs.type }}
             branch: ${{ inputs.branch }}
-            pre-release: ${{ inputs.pre-release }}
+            pre_release: ${{ inputs.pre_release }}
         secrets:
             token: ${{ secrets.GITHUB_TOKEN }}
