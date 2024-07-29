@@ -3,24 +3,20 @@ name: Ragdata's Reusable Workflows
 description: The reusable workflows that I actually use to manage my repos
 version: 0.1.0
 copyright: Copyright © 2024 Redeyed Technologies
-homepage: https://github.com/ragdata/reusable-workflows
-repository:
-    label: Reusable Workflows
-    url: https://github.com/ragdata/reusable-workflows
+website: https://github.com/ragdata/reusable-workflows
+repo_url: https://github.com/ragdata/reusable-workflows
 authors:
     - username: Ragdata
       first_name: Darren
       surname: Poulton
       email: ragdata@ragdata.dev
       affiliation: Redeyed Technologies
-rules:
-    protect_prod: true
-    changelog: true
-categories:
-    logged:
-        - feat
-        - ci
-        - fix
-        - perf
-        - style
-        - docs
+protect_prod: true
+changelog: true
+logged:
+    - feat
+    - ci
+    - fix
+    - perf
+    - style
+    - docs
