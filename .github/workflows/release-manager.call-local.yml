@@ -18,7 +18,7 @@ on:
     workflow_dispatch:
         inputs:
             version:
-                description: "Release version"
+                description: "Release Version"
                 required: false
                 type: string
             type:
@@ -34,7 +34,7 @@ on:
                     - version
                     - update
             branch:
-                description: "Branch to create release from"
+                description: "Branch / Tag to create release from"
                 required: false
                 type: string
             pre_release:
