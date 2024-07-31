@@ -26,19 +26,22 @@ on:
                 required: false
                 type: choice
                 options:
-                    - auto
+                    - version
+                    - first
                     - patch
                     - minor
                     - major
-                    - first
-                    - version
-                    - update
             branch:
                 description: "Branch / Tag to create release from"
                 required: false
                 type: string
             pre_release:
                 description: "Mark as pre-release?"
+                required: false
+                type: boolean
+                default: false
+            draft:
+                description: "Draft release?"
                 required: false
                 type: boolean
                 default: false

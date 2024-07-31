@@ -33,6 +33,11 @@ on:
                 required: false
                 type: boolean
                 default: false
+            draft:
+                description: "Draft release?"
+                required: false
+                type: boolean
+                default: false
         secrets:
             token:
                 required: true
