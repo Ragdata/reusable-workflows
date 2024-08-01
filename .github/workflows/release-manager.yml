@@ -25,11 +25,11 @@ on:
                 required: false
                 type: string
             branch:
-                description: "Branch / Tag to create release from"
+                description: "Branch to create release from"
                 required: false
                 type: string
             pre_release:
-                description: "Mark as pre-release?"
+                description: "Pre-release?"
                 required: false
                 type: boolean
                 default: false
