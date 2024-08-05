@@ -69,5 +69,6 @@ jobs:
                   type: ${{ inputs.type }}
                   branch: ${{ inputs.branch }}
                   pre_release: ${{ inputs.pre_release }}
+                  draft: ${{ inputs.draft }}
               env:
                   GITHUB_TOKEN: ${{ secrets.token }}
