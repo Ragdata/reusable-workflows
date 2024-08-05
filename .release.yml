@@ -11,7 +11,7 @@ authors:
       surname: Poulton
       email: ragdata@ragdata.dev
       affiliation: Redeyed Technologies
-protect_prod: true
+release: true
 changelog: true
 logged:
     - feat
