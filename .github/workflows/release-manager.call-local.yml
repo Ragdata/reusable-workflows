@@ -26,8 +26,8 @@ on:
                 required: false
                 type: choice
                 options:
+                    - auto
                     - version
-                    - first
                     - patch
                     - minor
                     - major
