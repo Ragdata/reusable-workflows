@@ -1,6 +1,7 @@
 <div align="center">
 
-[![MegaLinter](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml/badge.svg)](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml)<br />
+[![MegaLinter](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml/badge.svg)](https://github.com/Ragdata/reusable-workflows/actions/workflows/mega-linter.call-local.yml)
+<br />
 [![Dev](https://img.shields.io/badge/Status-Dev--Release-548af7?labelColor=31383f)](https://github.com/Ragdata/Ragdata/blob/master/docs/badges.md)
 ![Version](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fragdata%2Freusable-workflows%2Fmaster%2F.release.yml&query=%24.version&label=Version&color=548af7&labelColor=31383f)
 
