@@ -1,7 +1,7 @@
 extends: .release.base.yml
 name: Ragdata's Reusable Workflows
 description: The reusable workflows that I actually use to manage my repos
-version: 0.1.0
+version: v0.1.0
 copyright: Copyright © 2024 Redeyed Technologies
 website: https://github.com/ragdata/reusable-workflows
 repo_url: https://github.com/ragdata/reusable-workflows
