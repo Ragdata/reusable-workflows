@@ -1,0 +1,26 @@
+####################################################################
+# repo-manager.call-local.yml
+####################################################################
+# Ragdata's Repo Manager Local Caller Workflow
+#
+# File:         repo-manager.call-local.yml
+# Version:      1.0
+# Author:       Ragdata
+# Date:         12/08/2024
+# License:      MIT License
+# Copyright:    Copyright © 2024 Redeyed Technologies
+####################################################################
+name: Repo Manager
+
+on:
+    # Allows for manual triggering via the Actions tab
+    workflow_dispatch:
+
+jobs:
+
+    call_reusable_workflow:
+        permissions:
+            contents: write
+        uses: ./github/workflows/repo-manager.yml
+        secrets:
+            token: ${{ secrets.GITHUB_TOKEN }}

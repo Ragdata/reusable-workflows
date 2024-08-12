@@ -1,0 +1,42 @@
+####################################################################
+# repo-manager.yml
+####################################################################
+# Ragdata's Repo Manager Reusable Workflow
+#
+# File:         repo-manager.yml
+# Version:      1.0
+# Author:       Ragdata
+# Date:         12/08/2024
+# License:      MIT License
+# Copyright:    Copyright © 2024 Redeyed Technologies
+####################################################################
+name: Repo Manager - Reusable
+
+on:
+    # Allows this workflow to be called by other workflows
+    workflow_call:
+
+concurrency:
+    group: ${{ github.ref }}-${{ github.workflow }}
+    cancel-in-progress: true
+
+jobs:
+
+    manage-repo:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            ########################################################
+            # Checkout Repository
+            ########################################################
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+
+            ########################################################
+            # Manage Repo
+            ########################################################
+            - name: Manage Repo
+              uses: ragdata/repo-manager.action@develop
+              env:
+                  GITHUB_TOKEN: ${{ secrets.token }}
