@@ -63,7 +63,7 @@ jobs:
             # Manage Release
             ########################################################
             - name: Manage Release
-              uses: ragdata/release-manager.action@master
+              uses: ragdata/release-manager.action@develop
               with:
                   version: ${{ inputs.version }}
                   type: ${{ inputs.type }}
