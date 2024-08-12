@@ -1,4 +1,4 @@
-extends: .release.base.yml
+extends: relman.base.yml
 name: Ragdata's Reusable Workflows
 description: The reusable workflows that I actually use to manage my repos
 version: v0.1.0
@@ -10,13 +10,16 @@ authors:
       first_name: Darren
       surname: Poulton
       email: ragdata@ragdata.dev
+      location: Brisbane, Australia
       affiliation: Redeyed Technologies
-release: true
-changelog: true
-logged:
-    - feat
-    - ci
-    - fix
-    - perf
-    - style
-    - docs
+changelog:
+    template: changelog.md
+    file: CHANGELOG.md
+    style: per_release
+    create: true
+release:
+    template: release.md
+    create: true
+pull_request:
+    template: pull_request.md
+    create: true

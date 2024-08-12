@@ -7,7 +7,7 @@ See the [Contributor's Guidelines](https://github.com/Ragdata/.github/blob/maste
 
 {{ /doc header }}
 {{ #doc releases }}
-## [{{ release_version }}]({{ release_url }}) ({{ release_date }})
+## [{{ release_version }}]({{ release_url }}) <small>({{ release_date }})</small>
 
 {{ release_notes }}
 
@@ -26,5 +26,5 @@ See the [Contributor's Guidelines](https://github.com/Ragdata/.github/blob/maste
 {{ /doc commits }}
 {{ #doc footer }}
 
-Changelog last updated on {{ date }} for [{{ name }}]({{ repo_url }}) by [Ragdata's Release Manager](https://github.com/ragdata/release-manager.action)
+<small>Changelog last updated on **{{ date }}** for [**{{ name }}**]({{ repo_url }}) by [Ragdata's Release Manager](https://github.com/ragdata/release-manager.action)</small>
 {{ /doc footer }}
