@@ -31,7 +31,7 @@ jobs:
             # Checkout Repository
             ########################################################
             - name: Checkout Repository
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
 
             ########################################################
             # Manage Repo

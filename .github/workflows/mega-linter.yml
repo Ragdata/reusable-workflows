@@ -90,7 +90,7 @@ jobs:
         steps:
 
             - name: Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
               with:
                   token: ${{ secrets.token }}
                   # If you use VALIDATE_ALL_CODEBASE = true, you can remove this line to
